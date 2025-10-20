@@ -4,8 +4,8 @@
 ```
 	<groupId>com.appdynamics</groupId>
 	<artifactId>restapplication</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
-	<name>restapplication</name>
+	<version>{VERSION}-SNAPSHOT</version>
+	<name>rest-application</name>
 	<description>Demo project for Spring Boot</description>
 ```
 - mvnw clean install

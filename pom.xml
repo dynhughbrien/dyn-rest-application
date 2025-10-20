@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.hugenet</groupId>
-	<artifactId>restapplication</artifactId>
+	<artifactId>rest-application</artifactId>
 	<version>0.9.1</version>
 	<name>rest-application</name>
 	<description>Demo project for Spring Boot</description>
