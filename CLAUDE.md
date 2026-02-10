@@ -42,6 +42,7 @@ src/main/java/com/hugenet/controller/
   GreetingController.java    # Primary API controller - /greeting, /machine, /application, /check_message
   WelcomeController.java     # Secondary controller - /welcome, /applicationx
   BasicController.java       # Intentional error endpoints under /api/basic/
+  MemoryController.java      # Memory simulation - /addmemoryusage, /reducememoryusage, /reportmemoryuse
   Greeting.java              # Record: (long id, String content, String result, long dollarValue)
   Welcome.java               # Record: (long id, String content)
 
@@ -72,6 +73,9 @@ http_requests/               # IntelliJ HTTP Client test files
 | GET | `/api/basic/divide-by-zero` | BasicController | Intentional ArithmeticException |
 | GET | `/api/basic/bad-path/{id}` | BasicController | Incorrect annotation demo |
 | GET | `/api/basic/unhandled` | BasicController | Unhandled RuntimeException |
+| GET | `/addmemoryusage?sizeMB=&count=` | MemoryController | Allocates large byte[] chunks into a Map |
+| GET | `/reducememoryusage?count=` | MemoryController | Removes oldest chunks from the Map |
+| GET | `/reportmemoryuse` | MemoryController | Reports chunk inventory and JVM memory stats |
 | GET | `/actuator` | Spring Boot | Health/metrics actuator endpoints |
 
 ## Key Architectural Patterns
