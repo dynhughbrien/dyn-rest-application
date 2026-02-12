@@ -1,16 +1,16 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: restapplication
+  name: rest application
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: restapplication-service
+  name: rest-application-service
   namespace: restapplication
 spec:
   selector:
-    app: restapplication
+    app: rest-application
   ports:
     - protocol: TCP
       port: 8083
@@ -20,22 +20,22 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: restapplication
-  namespace: restapplication
+  name: rest-application
+  namespace: rest-application
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: restapplication
+      app: rest-application
   template:
     metadata:
       labels:
-        app: restapplication
+        app: rest-application
     spec:
       containers:
-        - name: restapplication
-#          image: hughbrien/restapplication:release-1.0.0
-          image: hbrien622/restapplication_amd64:1.0.2
+        - name: rest-application
+#          image: hughbrien/rest-application:0.9.2
+          image: hbrien622/rest-application:0.9.2
           imagePullPolicy : Always
           ports:
             - containerPort: 8083

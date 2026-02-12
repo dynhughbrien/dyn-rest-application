@@ -26,9 +26,6 @@ java -jar ./target/restapplication-0.0.4-SNAPSHOT.jar
 
 cp ./target/restapplication-0.0.4-SNAPSHOT.jar
 
-
-
-
 ```
 
 

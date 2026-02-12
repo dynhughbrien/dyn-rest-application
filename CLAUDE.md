@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Spring Boot REST API demo application (v0.9.1) designed for observability testing with OpenTelemetry, AppDynamics, and Dynatrace. The application exposes REST endpoints with intentional performance degradation and error scenarios for monitoring system validation.
+Spring Boot REST API demo application (v0.9.2) designed for observability testing with OpenTelemetry, AppDynamics, and Dynatrace. The application exposes REST endpoints with intentional performance degradation and error scenarios for monitoring system validation.
 
 ## Tech Stack
 
