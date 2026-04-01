@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Spring Boot REST API demo application (v0.9.2) designed for observability testing with OpenTelemetry, AppDynamics, and Dynatrace. The application exposes REST endpoints with intentional performance degradation and error scenarios for monitoring system validation.
+Spring Boot REST API demo application (v0.9.5) designed for observability testing with OpenTelemetry, AppDynamics, and Dynatrace. The application exposes REST endpoints with intentional performance degradation and error scenarios for monitoring system validation.
 
 ## Tech Stack
 
@@ -111,6 +111,6 @@ http_requests/               # IntelliJ HTTP Client test files
 2. **Do not remove `Thread.sleep()` calls** - synthetic delays in `GreetingController` and `WelcomeController` simulate real-world latency for observability testing.
 3. **Package mismatch is known** - test package is `com.appdynamics.restappdynamics` while main code is `com.hugenet.controller`. This is a legacy artifact.
 4. **No linting/formatting tools configured** - no Checkstyle, SpotBugs, or PMD plugins. Follow existing code style (standard Spring Boot conventions).
-5. **Version is in `pom.xml`** - currently `0.9.1`. Update there when bumping versions.
+5. **Version is in `pom.xml`** - currently `0.9.5`. Update there when bumping versions.
 6. **The app is stateless** - no database, no persistent storage. All counters reset on restart.
 7. **Port mismatch in Dockerfile** - Dockerfile `EXPOSE 8000` but app runs on `8083` per `application.properties`. This is a known inconsistency.
