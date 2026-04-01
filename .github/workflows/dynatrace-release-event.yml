@@ -52,7 +52,7 @@ jobs:
             "${{ github.ref }}")
 
           HTTP_STATUS=$(curl -s -o /tmp/dt_response.json -w "%{http_code}" \
-            -X POST "{DT_TENANT_URL}/api/v2/bizevents/ingest" \
+            -X POST "https://uim8926h.sprint.dynatracelabs.com/api/v2/bizevents/ingest" \
             -H "Authorization: Api-Token ${DT_API_TOKEN}" \
             -H "Content-Type: application/json" \
             -d "${PAYLOAD}")
