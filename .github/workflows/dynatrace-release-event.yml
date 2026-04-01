@@ -59,7 +59,7 @@ jobs:
           HTTP_STATUS=$(curl -s -o /tmp/dt_response.json -w "%{http_code}" \
             -X POST "${DT_TENANT_URL}/api/v2/bizevents/ingest" \
             -H "Authorization: Api-Token ${DT_API_TOKEN}" \
-            -H "Content-Type: application/json; charset=utf-8" \
+            -H "Content-Type: application/cloudevents+json" \
             -d "${PAYLOAD}")
 
           echo "Dynatrace response status: ${HTTP_STATUS}"
