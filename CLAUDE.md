@@ -27,7 +27,7 @@ Spring Boot REST API demo application (v0.9.5) designed for observability testin
 ./mvnw test
 
 # Run locally (port 8083)
-java -jar ./target/rest-application-0.9.1-SNAPSHOT.jar
+java -jar ./target/rest-application-0.9.5.jar
 
 # Docker
 docker build . -t restapplication:latest
