@@ -48,7 +48,8 @@ build/
 !**/src/test/**/build/
 
 ### VS Code ###
-.vscode/
+.vscode/*
+!.vscode/mcp.json
 
 
 
@@ -63,6 +64,10 @@ Thumbs.db
 
 # Compiled class file
 *.class
+
+# Environment variables
+.env
+.env.local
 
 # Log file
 *.log
