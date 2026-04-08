@@ -1,4 +1,5 @@
 ### Build Rest Application for Kubernetes 
+
 - Need an easy way to persist the VERSION number in the build process
 - Check version number in ./pom.xml file.
 ```
