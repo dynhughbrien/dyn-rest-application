@@ -1,11 +1,9 @@
 {
   "servers": {
     "npx-dynatrace-mcp-server": {
-      "command": "npx",
+      "command": "bash",
       "cwd": "${workspaceFolder}",
-      "args": ["-y", "@dynatrace-oss/dynatrace-mcp-server@latest"],
-      "envFile": "${workspaceFolder}/.env"
+      "args": ["-c", "set -a && source .env && set +a && npx -y @dynatrace-oss/dynatrace-mcp-server@latest"]
     }
   }
 }
-
