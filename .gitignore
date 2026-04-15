@@ -1,5 +1,5 @@
 run.sh
-.env
+#.env
 
 HELP.md
 target/
